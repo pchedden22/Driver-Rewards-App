@@ -1,0 +1,164 @@
+.parallaxBackground {
+  position: relative;
+  background-image: url('/LandingPageBackground.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero {
+  height: 100vh;
+  color: var(--header-text);
+  padding: 6rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.featureItem {
+  background-color: var(--content-background);
+  color: var(--foreground);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton {
+  background-color: var(--theme-orange);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.ctaButton:hover {
+  background-color: var(--background);
+  color: var(--theme-orange);
+  border: 1px solid var(--theme-orange);
+}
+
+.transparentSection {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.adSection {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card {
+  width: 225px;
+  height: 254px;
+  background: var(--theme-orange);
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  font-size: 30px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.2);
+  background: var(--theme-purple);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+}
+
+/* First content that shows initially */
+.firstContent {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 10px;
+  font-weight: normal;
+}
+
+.card:hover .firstContent {
+  height: 0px;
+  opacity: 0;
+}
+
+/* Second content that appears on hover */
+.secondContent {
+  height: 0;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.4s;
+  font-size: 0px;
+  transform: rotate(90deg) scale(-1);
+  text-align: center;
+  padding: 0 1rem;
+  font-weight: normal;
+}
+
+.card:hover .secondContent {
+  opacity: 1;
+  height: 100%;
+  font-size: 1rem;
+  transform: rotate(0deg);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero, .opaqueSection, .transparentSection, .adSection {
+  position: relative;
+  z-index: 2;
+}
+
+.iconLeft, .iconRight {
+  width: 125px; /* Adjust as needed */
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+  align-self: center; /* Centers the icon vertically within the flex container */
+  margin: 0 auto; /* Centers the icon horizontally */
+}
+
+
+.iconLeft {
+  margin-left: auto;
+}
+
+.iconRight {
+  margin-left: auto; /* Pushes the icon to the far right */
+}

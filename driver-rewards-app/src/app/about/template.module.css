@@ -1,0 +1,38 @@
+/* Main Layout */
+.about_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    color: var(--foreground)
+}
+
+/* Background */
+.background{
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+    padding-bottom: 40px; 
+    padding-top: 40px; 
+  }
+
+/* Dashboard Header */
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--theme-orange);
+    color: white;
+}
+
+/* Header styling */
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.h2 {
+    font-size: 2em;
+    margin: 0;
+}

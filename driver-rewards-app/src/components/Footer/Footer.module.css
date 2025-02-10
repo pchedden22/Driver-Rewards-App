@@ -1,0 +1,8 @@
+.foot {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--theme-purple);
+    color: var(--header-link);
+    margin-top: 0;
+    width: 100%;
+}

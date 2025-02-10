@@ -1,0 +1,179 @@
+/* leaderboard.module.css */
+
+/* Container for the entire leaderboard */
+.leaderboardContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main title of the leaderboard page */
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Flex container to display the leaderboards side by side */
+.leaderboards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual leaderboard section */
+.leaderboard {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 32%; /* 3 leaderboards side by side */
+}
+
+/* Title of each leaderboard */
+.leaderboard h3 {
+    font-size: 1.5rem;
+    color: #522d80; /* Purple for consistency */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* List of leaderboard items */
+.leaderboardList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual item in the leaderboard */
+.leaderboardItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+.leaderboardItem:last-child {
+    border-bottom: none;
+}
+
+/* Ranking position style */
+.rank {
+    font-size: 1.1rem;
+    color: #522d80;
+    font-weight: bold;
+}
+
+/* User's name styling */
+.name {
+    font-size: 1.1rem;
+    color: #333;
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* Style for achievement badges */
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.badge {
+    background-color: #f56600; /* Orange for achievement badges */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Style for points or other numeric metrics */
+.points {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f56600;
+}
+
+/* Styling for the current user's rank and achievements section */
+.userRanking {
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* User's rank and points display */
+.userRanking h3 {
+    color: #522d80;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* User's achievements section */
+.userRanking ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.userRanking ul li {
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+/* View My Ranking button styling */
+.userRanking button {
+    background-color: #522d80;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.userRanking button:hover {
+    background-color: #f56600; /* Hover effect */
+}
+
+/* Container for the back button at the bottom */
+.backButtonContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Back to reports button styling */
+.backButton {
+    background-color: #522d80;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    background-color: #f56600; /* Hover effect */
+}
+
+.optOutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.optOutSection label {
+    font-size: 1rem;
+    color: var(--foreground);
+}
+

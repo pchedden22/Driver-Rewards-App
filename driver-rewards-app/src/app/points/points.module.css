@@ -1,0 +1,164 @@
+/* Background */
+.contentContainer {
+
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+    padding: 20px;
+  
+  }
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.header h2 {
+    font-size: 1.2rem;
+    color: var(--theme-purple);
+}
+
+/* Points Display */
+.pointsDisplay {
+    background-color: #ffebcc;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pointsDisplay h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Currency Conversion Section */
+.currencyConversion {
+    background-color: #b9b9b9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.currencyConversion h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.currencyConversion label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.currencyConversion select {
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    color: black;
+}
+
+/* Transactions Display */
+.transactionsDisplay {
+
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--foreground);
+    background-color: var(--content-background);
+}
+
+.transactionsDisplay h2 {
+    font-size: 1.2rem;
+    color: var(--foreground);
+    margin-bottom: 15px;
+}
+
+/* Transactions Table */
+.transactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--content-background);
+}
+
+.transactionsTable th, .transactionsTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+
+}
+
+.transactionsTable th {
+    background-color: var(--theme-orange);
+    color: #fff;
+}
+
+.transactionsTable td {
+    color: var(--foreground);
+}
+
+/* Transactions Display */
+.itemsDisplay {
+
+    padding: 20px;
+    border-radius: 8px;
+    color: var(--foreground);
+    background-color: var(--content-background);
+}
+
+
+
+/* Define styles for points added and points spent */
+.pointsAdded {
+    color: #388e3c; /* Green color for added points */
+    font-weight: bold;
+}
+
+.pointsSpent {
+    color: #d32f2f; /* Red color for spent points */
+    font-weight: bold;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contentContainer {
+        padding: 15px;
+    }
+
+    .transactionsTable th, .transactionsTable td {
+        padding: 8px;
+    }
+
+    .currencyConversion, .pointsDisplay, .transactionsDisplay {
+        padding: 15px;
+    }
+}
+
+.filterContainer {
+    margin-bottom: 20px;
+}
+
+#transactionFilter {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.filterContainer select{
+    margin-bottom: 20px;
+    color: black;
+}
+
+.header2 {
+    font-size: 1.2rem;
+    color: var(--foreground);
+    margin-bottom: 15px;
+}
+
+.blackText{
+    color: black;
+}

@@ -1,0 +1,187 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures items are spaced across the navbar */
+  padding: 1em;
+  background-color: var(--theme-purple); /* Main background color */
+  color: var(--header-text);
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Logo and app title on the left */
+.icon_home {
+  display: flex;
+  align-items: center;
+  color: var(--theme-orange);
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.icon_home img {
+  margin-right: 10px;
+}
+
+/* Main navigation links */
+.nav_center {
+  flex-grow: 1; /* allows the nav_center to occupy available space */
+  display: flex;
+  justify-content: center; /* centers nav links */
+  gap: 20px;
+}
+
+.nav_center li {
+  display: inline-block;
+}
+
+.nav_center li a {
+  color: var(--header-text);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: var(--theme-orange);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav_center li a:hover,
+.nav_center li.active a {
+  background-color: var(--background);
+  color: var(--theme-orange);
+  border: 1px solid var(--theme-orange);
+}
+
+/* Right side of the navbar (e.g., user info, login button) */
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between elements */
+}
+
+.nav_login {
+  background-color: var(--theme-orange);
+  border: 1px solid var(--theme-orange);
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: var(--header-text);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav_login:hover {
+  background-color: var(--background);
+  color: var(--theme-orange);
+}
+
+/* User info dropdown trigger */
+.nav_user_info {
+  display: flex;
+  align-items: center;
+  background-color: var(--theme-orange);
+  color: var(--header-text);
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.nav_user_info:hover {
+  color: var(--header-link);
+}
+
+/* Sponsor dropdown */
+.sponsorSelect {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--background);
+  color: var(--theme-orange);
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--theme-orange);
+}
+
+.sponsorSelect select {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  font-size: 1em;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.sponsorSelect select:focus {
+  outline: none;
+}
+
+/* Notification modal */
+.notificationModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001;
+}
+
+.notificationContent {
+  background-color: var(--background);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--header-text);
+}
+
+.notificationContentButton {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: var(--theme-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav_center {
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbarRight {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav_user_info,
+  .sponsorSelect,
+  .nav_login {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_center {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav_user_info,
+  .sponsorSelect,
+  .nav_login {
+    font-size: 0.8em;
+  }
+}

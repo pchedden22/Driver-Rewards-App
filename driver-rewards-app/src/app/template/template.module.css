@@ -1,0 +1,10 @@
+:root {
+    --variable: #23445d;
+}
+
+.template-body {
+    color: black;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+

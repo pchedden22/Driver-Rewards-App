@@ -1,0 +1,241 @@
+/* Background */
+.background{
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+  }
+
+  /* driverList.module.css */
+
+.driverTable {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.driverTable td {
+    background-color: var(--content-background);
+    color: var(--foreground);
+}
+
+.driverTable th, .driverTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.driverTable th {
+    background-color: var(--theme-orange); /* Theme purple */
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.driverTable tbody tr:hover td {
+    background-color: #f2f2f2; /* Light hover effect */
+    color: black;
+}
+
+
+
+.driverTable tbody tr {
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    color: black;
+}
+
+.closeButton {
+    background: var(--theme-orange);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.closeButton:hover {
+    background: var(--theme-purple);
+}
+
+/* driverList.module.css */
+
+.searchInput {
+    width: 100%;
+    padding: 8px;
+    margin: 16px 0;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.background {
+    background-color: var(--background); /* Replace with your desired color value */
+    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    margin: 0; /* Remove default body margins */
+}
+
+.reviewApplications {
+    background-color: var(--content-background);
+    color: var(--foreground);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviewApplications h1 {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    color: var(--foreground);
+}
+
+.reviewApplications ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reviewApplications li {
+    background-color: var(--theme-purple);
+    color: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewApplications li p {
+    margin: 0;
+}
+
+.reviewApplications button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--theme-orange);
+    color: white;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.reviewApplications button:hover {
+    background-color: var(--background);
+    color: var(--theme-orange);
+    transition: color 0.3s;
+    border: 1px solid var(--theme-orange);
+}
+
+.header3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: var(--background);
+    font-weight: bold;
+    }
+
+/* SupportRequests */
+.supportRequests {
+    background-color: var(--content-background);
+    color: var(--foreground);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Ensure space above the footer */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.supportRequests h1 {
+    margin-bottom: 16px;
+    font-size: 1.5em;
+    color: var(--foreground);
+    text-align: left;
+    margin-left: 12px; /* Slight offset for consistency with other sections */
+}
+
+.supportRequests ul {
+    list-style: none;
+    padding: 0;
+}
+
+.supportRequests li {
+    background-color: var(--theme-purple);
+    color: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.supportRequests li p {
+    margin: 0;
+}
+
+.supportRequests button {
+    padding: 8px 16px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--theme-orange);
+    color: white;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.supportRequests button:hover {
+    background-color: var(--background);
+    color: var(--theme-orange);
+    transition: color 0.3s;
+    border: 1px solid var(--theme-orange);
+}
+
+/* Footer */
+.footer {
+    position: relative; /* Ensure no overlap issues */
+    margin-top: auto; /* Push footer to the bottom of the page */
+    padding: 20px;
+    background-color: var(--theme-purple);
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Page Layout */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full-page height to avoid content overflow */
+    justify-content: space-between;
+}
+
+/* Ensure proper spacing and layout */
+.container {
+    flex-grow: 1; /* Ensures content takes up available space */
+    padding-bottom: 40px; /* Add space before footer if content is dynamic */
+}
+

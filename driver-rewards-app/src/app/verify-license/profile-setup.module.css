@@ -1,0 +1,86 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--theme-orange);
+    color: var(--header-text);
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+  }
+  
+  .profileEdit {
+    background-color: var(--content-background);
+    padding: 40px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profileEditForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .profileEditForm label {
+    font-weight: bold;
+    color: var(--foreground);
+    margin-bottom: 5px;
+  }
+  
+  .profileEditForm input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--theme-purple);
+    color: black;
+    background-color: white;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .profileEditForm input:focus {
+    outline: none;
+    border-color: var(--theme-orange);
+    box-shadow: 0 0 0 2px rgba(245, 102, 0, 0.1);
+  }
+  
+  .saveButton {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: var(--theme-orange);
+    color: var(--header-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .saveButton:hover {
+    background-color: var(--theme-purple);
+  }
+  
+  .error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .confirmation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

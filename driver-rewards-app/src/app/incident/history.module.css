@@ -1,0 +1,27 @@
+/* Styles for History of Rewards and Recognition */
+.historySection {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.historyList {
+    list-style: none;
+    padding: 0;
+}
+
+.historyItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.historyDate {
+    font-weight: bold;
+    color: #522D80; /* Your primary color */
+}
+
+.historyDescription {
+    color: #F56600; /* Your secondary color */
+}

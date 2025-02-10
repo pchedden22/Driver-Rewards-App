@@ -1,0 +1,262 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: black;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: var(--theme-orange);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: var(--theme-purple);
+  }
+  
+  .inputselect {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: black
+  }
+  
+  .input[type="radio"] {
+    margin-left: 10px;
+  }
+
+  .inputselect:hover {
+    border-color: var(--theme-orange);
+}
+
+.inputselect:focus {
+    outline: none;
+    border-color: var(--theme-orange);
+    box-shadow: 0 0 5px rgba(245, 102, 0, 0.3);
+}
+
+.header3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: var(--foreground);
+    }
+
+.blackText {
+  color: black;;
+  }
+  
+
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Header and title styling */
+.header h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Search input styling */
+.searchInput {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.driverTable {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.driverTable td {
+  color: var(--foreground);
+}
+
+.driverTable th, .driverTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+
+
+.driverTable th {
+  background-color: var(--theme-orange);
+  color: white;
+}
+
+
+.driverTable tr:hover td{
+  background-color: #d8d8d8;
+  cursor: pointer;
+  color: black;
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  background-color: var(--theme-orange);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: var(--theme-purple);
+}
+
+/* Modal overlay and content styling */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modalContent h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.closeButton {
+  background-color: #f56600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.closeButton:hover {
+  background-color: #d35400;
+}
+
+/* Section styling */
+.section {
+  background-color: var(--content-background);
+  color: var(--foreground);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.section h3{
+  font-size: 1.8rem;
+  margin: 10px 0;
+  color: var(--foreground);
+  }
+
+
+/* Label styling */
+.label {
+  font-size: 1em;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input and textarea styling */
+.input[type="text"],
+.input[type="number"],
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  font-size: 1em;
+  color:black
+}
+
+/* Quick Actions and custom buttons */
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.recurringPayment {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.recurringPayment button {
+  background-color: #f56600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.recurringPayment button:hover {
+  background-color: #d35400;
+}
+
+.mainBackground{
+  background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: black;
+}
+
+.dropdown{
+  color: black;
+}

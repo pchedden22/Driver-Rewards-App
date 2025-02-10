@@ -1,0 +1,155 @@
+/* Form Container */
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    color: var(--foreground)
+
+}
+
+/* Form Styling */
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.form label {
+    font-weight: bold;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    color: black
+}
+
+/* Make the form elements full width in the second column */
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"] {
+    width: 100%;
+}
+
+/* Add a full-width row for the submit button */
+.form button {
+    grid-column: span 2;
+    padding: 15px;
+    background-color: #F56600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color: #522D80;
+    transition: 0.3s;
+}
+
+/* Align submit button to the right */
+.form button {
+    justify-self: center;
+    margin-top: 20px;
+}
+
+
+/* Form Input Styling with Black Outline */
+/* Styling form inputs with a black border by default */
+.form input {
+    padding: 10px;
+    font-size: 14px;
+
+    outline: none; /* Removes the default browser focus outline */
+    margin-bottom: 15px; /* Adds space between input fields */
+}
+
+/* Optional: Add a hover effect for input focus */
+.form input:focus {
+    border: 2px solid black; /* Make outline thicker on focus */
+    transition: 0.3s ease-in-out;
+}
+
+/* Dashboard Header */
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: #F56600;
+    color: white;
+}
+
+/* Background */
+.background{
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+  }
+
+/* Label styling */
+.dropdownLabel {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Dropdown styling */
+.dropdown {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.dropdown:hover {
+    border-color: #888;
+}
+
+/* Focus effect */
+.dropdown:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Input styling (for company input) */
+.dropdownInput {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.dropdownInput:hover {
+    border-color: #888;
+}
+
+/* Focus effect */
+.dropdownInput:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

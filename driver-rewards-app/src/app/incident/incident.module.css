@@ -1,0 +1,228 @@
+/* Global Container */
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    color: var(--foreground);
+    background-color: var(--content-background);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--theme-orange);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Summary & Filter Section */
+.summarySection,
+.filterSection {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summarySection h2,
+.filterSection h3 {
+    font-size: 1.4em;
+    color: var(--foreground);
+    margin-bottom: 10px;
+}
+
+/* Filter Section Input Styling */
+.filterSection input,
+.filterSection select {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--theme-orange);
+    color: #333;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Filter Section Button Styling */
+.filterSection button {
+    background-color: var(--theme-orange);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.filterSection button:hover {
+    background-color: #d84c00;
+}
+
+/* Graph Section */
+.graphSection {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Graph Container */
+.graphContainer {
+    width: 100%;
+    height: 400px; /* Define fixed height */
+    max-height: 400px;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/* Incident Table Styling */
+.incidentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+}
+
+.incidentTable th,
+.incidentTable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.incidentTable th {
+    background-color: var(--theme-orange);
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Content Container */
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Summary Cards */
+.summaryCard {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.summaryCard:hover {
+    transform: translateY(-5px);
+}
+
+.summaryCard h4 {
+    font-size: 1.1rem;
+    color: var(--theme-purple);
+    margin-bottom: 8px;
+}
+
+/* Driving Metrics Section */
+.drivingMetricsSection {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Metrics Container */
+.metricsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Table and Graph Flexbox */
+.tableAndGraphContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-top: 1px solid #ddd;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.pagination button {
+    background-color: var(--theme-orange);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .summarySection,
+    .filterSection,
+    .graphSection,
+    .drivingMetricsSection {
+        padding: 10px;
+    }
+
+    .graphContainer {
+        height: 300px;
+    }
+
+    .contentContainer {
+        padding: 10px;
+    }
+}
+
+/* History Section */
+.historySection {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--content-background);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.historySection h3 {
+    font-size: 1.4em;
+    color: var(--foreground);
+    margin-bottom: 15px;
+}
+
+/* Background */
+.background{
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+  }

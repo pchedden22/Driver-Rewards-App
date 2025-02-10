@@ -1,0 +1,136 @@
+/* accountSettings.module.css */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px;
+  background-color: var(--content-background);
+}
+
+.forgotPasswordInput {
+color: black;
+}
+
+.header {
+  text-align: center;
+  padding: 50px;
+  background-color: #F56600;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.mainBackground{
+  background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+}
+
+.settingsSection {
+  background-color: var(--content-background);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.settingsEditForm label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.settingsEditForm select,
+.settingsEditForm input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--theme-orange);
+  transition: border-color 0.3s ease; /* Animation for border color */
+  color: black;
+}
+
+/* Valid and Invalid input styles */
+.inputValid {
+  border-color: #4caf50; /* Green */
+}
+
+.inputInvalid {
+  border-color: #f44336; /* Red */
+}
+
+.saveButton,
+.cancelButton {
+  margin-top: 15px;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: var(--theme-orange);
+  color: var(--header-text);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animation */
+}
+
+.saveButton:hover,
+.cancelButton:hover {
+  background-color: var(--header-text);
+  color: var(--theme-orange);
+}
+
+.sectionHeader {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--foreground);
+}
+
+.confirmationMessage {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #4caf50; /* Green for success */
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Error message style */
+.errorMessage {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  border-radius: 5px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .header {
+      padding: 30px;
+  }
+  
+  .sectionHeader {
+      font-size: 1.2em;
+  }
+}
+
+/* Buttons */
+.editButton {
+  background-color: var(--theme-orange);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.editButton:hover {
+  background-color: var(--theme-purple);
+}

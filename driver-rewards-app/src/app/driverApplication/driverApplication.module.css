@@ -1,0 +1,164 @@
+/* Background */
+.contentContainer {
+
+    background: linear-gradient(to right, var(--theme-purple), #ffffff 50%, #ffffff 50%, var(--theme-purple));
+  
+  }
+
+  /*
+.contentContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}*/
+
+/* Dashboard Header */
+.header {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--theme-orange);
+    color: white;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+  
+
+.header2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+
+/* Label styling - black text for the label */
+.label {
+    display: block;
+    font-size: 16px;
+    color: #ffffff; /* Black color for the label text */
+    margin-bottom: 10px;
+}
+
+/* Select styling - white text for options */
+.select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* White text */
+    box-sizing: border-box;
+}
+
+/* Textarea specific adjustments */
+.textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #000000;
+    border: 1px solid #ccc;
+    resize: vertical;
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: var(--theme-orange);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--theme-purple);
+}
+
+
+.applicationItem {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Title */
+.title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Application List */
+.applicationList {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Application Item Card Style */
+.applicationItem {
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    background-color: #f3f3f3; /* Light grey for contrast */
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.applicationItem:hover {
+    transform: translateY(-3px); /* Subtle hover effect */
+}
+
+/* Application Item Details */
+.applicationItem p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.applicationItem strong {
+    color: #555; /* Darker gray for labels */
+}
+
+/* Outgoing Applications Title */
+.outgoingTitle {
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* Outgoing Applications Container */
+.outgoingApplicationsContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* No Applications Text */
+.noApplicationsText {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin: 20px 0;
+}
+

@@ -1,0 +1,24 @@
+.authpage {
+
+    background-color: var(--theme-purple);
+
+    height: 100vh;
+}
+
+.authmenu {
+    color: var(--theme-purple);
+    --amplify-components-authenticator-router-box-shadow: 0 0 16px var(--amplify-colors-overlay-10);
+    --amplify-components-authenticator-router-border-width: 0;
+    --amplify-components-authenticator-form-padding: var(--amplify-space-medium) var(--amplify-space-xl) var(--amplify-space-xl);
+    --amplify-components-button-primary-background-color: var(--theme-orange);
+    --amplify-components-fieldcontrol-focus-box-shadow: 0 0 0 2px var(--theme-purple);
+    --amplify-components-tabs-item-active-border-color: var(--theme-orange);
+    --amplify-components-tabs-item-color: rgb(82, 58, 42);
+    --amplify-components-tabs-item-active-color: var(--theme-orange);
+    --amplify-components-tabs-item-hover-color: var(--theme-orange);
+    --amplify-components-button-link-color: var(--amplify-colors-purple-80);
+    --amplify-components-authenticator-router-background-color: var(--content-background);
+    --amplify-components-authenticator-or-container-color: var(--foreground);
+    --amplify-components-field-label-color: var(--foreground-link);
+    --amplify-components-input-color: var(--foreground);
+}

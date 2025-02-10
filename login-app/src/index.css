@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --theme-colors-orange: #f56600;
+  --theme-colors-purple: #522d80;
+  --theme-colors-white: #f4f4f4;
+
+  background-color: #522d80;
+
+  [data-amplify-authenticator] {
+    color: #522d80;
+    --amplify-components-authenticator-router-box-shadow: 0 0 16px var(--amplify-colors-overlay-10);
+    --amplify-components-authenticator-router-border-width: 0;
+    --amplify-components-authenticator-form-padding: var(--amplify-space-medium) var(--amplify-space-xl) var(--amplify-space-xl);
+    --amplify-components-button-primary-background-color: var(--theme-colors-orange);
+    --amplify-components-fieldcontrol-focus-box-shadow: 0 0 0 2px var(--theme-colors-purple);
+    --amplify-components-tabs-item-active-border-color: var(--theme-color-purple);
+    --amplify-components-tabs-item-color: var(--amplify-colors-neutral-80);
+    --amplify-components-tabs-item-active-color: var(--amplify-colors-purple-100);
+    --amplify-components-button-link-color: var(--amplify-colors-purple-80);
+    
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
